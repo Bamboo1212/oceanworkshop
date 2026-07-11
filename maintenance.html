@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-Hant-TW">
+
+<head>
+  <title>網站維護中｜海洋工作坊</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="images/favicon.ico">
+
+  <!-- 基本設定 -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="https://www.ocean-workshop.tw/">
+  <meta name="description" content="海洋工作坊致力於推廣海洋教育與永續行動，透過多元課程與體驗活動，帶領大小朋友親近海洋、認識生態，一起守護湛藍的海洋家園。">
+  <link rel="canonical" href="https://www.ocean-workshop.tw/">
+
+  <!-- og -->
+  <meta property="og:title" content="海洋工作坊">
+  <meta property="og:description" content="海洋工作坊致力於推廣海洋教育與永續行動，透過多元課程與體驗活動，帶領大小朋友親近海洋、認識生態，一起守護湛藍的海洋家園。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="海洋工作坊">
+  <meta property="og:url" content="https://www.ocean-workshop.tw/">
+  <meta property="og:image" content="images/og_1200x630.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- 手機友好化 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="=apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="css/custom.css">
+  <!-- 樣式Css -->
+  <style type="text/css">
+  :root {
+    --text: #333;
+    --title-text: #333;
+    --white: #FFF;
+    --primary: var(--cnvs-themecolor);
+    --btn-bg: var(--cnvs-themecolor);
+    --bg: #f9f9f9;
+    --error-tx: #eee;
+  }
+
+  * {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  .maintenance-page {
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .maintenance__content {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .maintenance-box {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+  }
+
+  .maintenance-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .maintenance-title {
+    color: var(--cnvs-themecolor);
+    font-size: 42px;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .maintenance-reason {
+    width: 100%;
+  }
+
+  .maintenance-reason>p,.follow-box > p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .contact-box > a {
+    padding: 10px 40px;
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-bg);
+    border-radius: 3px;
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: 2px;  
+    transition: 0.3s; 
+  }
+
+  .contact-box > a:hover {
+    color: var(--btn-bg);
+    background-color: var(--white);
+  }
+
+  .follow-box {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .follow-social-outer {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .follow-social-outer a+a {
+    margin-left: 10px;
+  }
+
+  .follow-social-outer a>img {
+    width: 36px;
+    image-rendering: -webkit-optimize-contrast;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+  }
+
+  .follow-social-outer a>img:hover {
+    top: -5px;
+    transition: 0.3s;
+  }
+
+  .maintenance-background {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: -9;
+    background: var(--bg);
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .maintenance-background p {
+    color: var(--error-tx);
+    font-size: 200px;
+    line-height: 200px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  @media(max-width: 1699px) {
+    .maintenance-background p {
+      font-size: 180px;
+      line-height: 180px;
+    }
+  }
+
+  @media(max-width: 1499px) {
+    .maintenance-background p {
+      font-size: 160px;
+      line-height: 160px;
+    }
+  }
+
+  @media(max-width: 1299px) {
+    .maintenance-background p {
+      font-size: 140px;
+      line-height: 140px;
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .maintenance-background p {
+      font-size: 110px;
+      line-height: 110px;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .maintenance-title {
+      margin-bottom: 10px;
+    }
+
+    .maintenance-background p {
+      font-size: 85px;
+      line-height: 85px;
+    }
+
+    .maintenance-logo img {
+      width: 320px;
+    }
+
+  }
+
+  @media(max-width: 767px) {
+    .media-block {
+      display: block;
+    }
+
+    .media-none {
+      display: none;
+    }
+
+    .maintenance-background {
+      display: none;
+    }
+
+    .maintenance-reason>p, .follow-box > p {
+      font-size: 16px;
+    }
+  }
+
+  @media(max-width: 575px) {
+    .maintenance-title {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+
+    .contact-box>a {
+      font-size: 16px;
+      padding: 8px 25px;
+    }
+
+    .maintenance-logo img {
+      width: 280px;
+    }
+  }
+  </style>
+</head>
+
+<body class="maintenance-page">
+  <div class="maintenance__content">
+    <div class="maintenance-box">
+      <!-- 放logo圖 -->
+      <div class="maintenance-logo mb-4">
+        <img class="maintenance-img" src="images/logo_360x160.png" alt="">
+      </div>
+      <h1 class="maintenance-title">網站維護中<span class="media-none">，</span><span class="media-block">請稍後!</span></h1>
+      <div class="maintenance-reason">
+        <p>系統正在進行維護<br>如果造成您的不便，敬請見諒</p>
+      </div>
+      <a href="index.html" class="btn-base mt-4">
+        <span class="txt">返回首頁</span>
+        <span class="shape"></span>
+        <span class="shape"></span>
+        <span class="shape"></span>
+        <span class="shape"></span>
+      </a>
+    </div>
+    <div class="maintenance-background">
+      <p>maintenance</p>
+    </div>
+  </div>
+</body>
+
+</html>
